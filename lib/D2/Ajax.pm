@@ -11,4 +11,9 @@ get '/api/v1/greeting' => sub {
     header('Content-type' => 'application/json');
     return to_json {text => 'Hello_World'};
 };
+
+get '/v1' => sub {
+    return template 'v1';
+};
+
 true;
